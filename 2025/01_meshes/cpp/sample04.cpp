@@ -66,12 +66,19 @@ int main(int argc, char **argv)
   // We specify element sizes imposed by a size field, just because we can :-)
   bool funny = false; // false;
   int f = gmsh::model::mesh::field::add("MathEval");
+<<<<<<< HEAD
     if(funny){
         gmsh::model::mesh::field::setString(f, "F", "2*Sin((x+y)/5) + 3");
     }
     else{
         gmsh::model::mesh::field::setString(f, "F", "4");
     }
+=======
+  if(funny)
+    gmsh::model::mesh::field::setString(f, "F", "2*sin((x+y)/5) + 3");
+  else
+    gmsh::model::mesh::field::setString(f, "F", "4");
+>>>>>>> upstream/master
   gmsh::model::mesh::field::setAsBackgroundMesh(f);
   gmsh::model::mesh::generate(3);
 
