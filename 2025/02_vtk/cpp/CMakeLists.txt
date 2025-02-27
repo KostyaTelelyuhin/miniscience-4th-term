@@ -23,6 +23,7 @@ include_directories(/usr/local/Cellar/nlohmann-json/3.11.3/include)
 add_executable(cubic2d cubic2d.cpp)
 add_executable(cubic3d cubic3d.cpp)
 add_executable(tetr3d tetr3d.cpp)
+add_executable(Lab2 Lab2.cpp)
 
 
 # Аналогично с VTK
@@ -40,10 +41,12 @@ include(${VTK_USE_FILE})
 # ... тут только VTK
 target_link_libraries(cubic2d PRIVATE ${VTK_LIBRARIES})
 target_link_libraries(cubic3d PRIVATE ${VTK_LIBRARIES})
+target_link_libraries(Lab2 PRIVATE ${VTK_LIBRARIES})
 
 # ... а тут ещё и gmsh
 #target_link_libraries(tetr3d ${VTK_LIBRARIES})
 target_link_libraries(tetr3d PRIVATE ${VTK_LIBRARIES})
+target_link_libraries(Lab2 PRIVATE ${VTK_LIBRARIES})
 
 
 #target_link_libraries(tetr3d ${GMSH_LIBRARIES})
@@ -55,10 +58,16 @@ target_link_libraries(tetr3d PRIVATE ${VTK_LIBRARIES})
 target_include_directories(cubic2d PRIVATE ${GMSH_INCLUDE_DIR}) #Вроде не надо но мало ли
 target_include_directories(cubic3d PRIVATE ${GMSH_INCLUDE_DIR}) #Вроде не надо но мало ли
 target_include_directories(tetr3d PRIVATE ${GMSH_INCLUDE_DIR})
+target_include_directories(Lab2 PRIVATE ${GMSH_INCLUDE_DIR})
+
+
+
+
 
 target_link_libraries(cubic2d PRIVATE ${GMSH_LIBRARY}) #Вроде не надо но мало ли
 target_link_libraries(cubic3d PRIVATE ${GMSH_LIBRARY}) #Вроде не надо но мало ли
 target_link_libraries(tetr3d PRIVATE ${GMSH_LIBRARY})
+target_link_libraries(Lab2 PRIVATE ${GMSH_LIBRARY})
 
 #vtk директории
 
@@ -66,10 +75,8 @@ target_include_directories(cubic2d PRIVATE ${VTK_INCLUDE_DIRS})
 target_include_directories(cubic3d PRIVATE ${VTK_INCLUDE_DIRS})
 target_include_directories(tetr3d PRIVATE ${VTK_INCLUDE_DIRS})
 
-#Вроде еще нужно что
+target_include_directories(Lab2 PRIVATE ${VTK_INCLUDE_DIRS})
 
-#set(NLOH_INCLUDE_DIRS "")
-#target_include_directories(tetr3d PRIVATE ${NLOH_INCLUDE_DIRS})
 
 
 

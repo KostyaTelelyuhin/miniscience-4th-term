@@ -145,7 +145,7 @@ int main()
     // Шаг точек по пространству
     double h = 0.1;
     // Шаг по времени
-    double tau = 0.01;
+    double tau = 0.1;
 
     // Создаём сетку заданного размера
     CalcMesh mesh(size, h);

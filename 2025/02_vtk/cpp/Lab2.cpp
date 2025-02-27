@@ -1,5 +1,15 @@
-#include <iostream>
+// -----------------------------------------------------------------------------
+//
+//  Gmsh C++ tutorial 13
+//
+//  Remeshing an STL file without an underlying CAD model
+//
+// -----------------------------------------------------------------------------
+
+#include <set>
 #include <cmath>
+#include <gmsh.h>
+#include <iostream>
 #include <vector>
 
 #include <vtkDoubleArray.h>
@@ -10,11 +20,10 @@
 #include <vtkUnstructuredGrid.h>
 #include <vtkSmartPointer.h>
 
-#include <gmsh.h>
 
 using namespace std;
 
-// Класс расчётной точки
+
 class CalcNode
 {
 // Класс сетки будет friend-ом точки
@@ -39,7 +48,7 @@ public:
     }
 
     // Конструктор с указанием всех параметров
-    CalcNode(double x, double y, double z, double smth, double vx, double vy, double vz) 
+    CalcNode(double x, double y, double z, double smth, double vx, double vy, double vz)
             : x(x), y(y), z(z), smth(smth), vx(vx), vy(vy), vz(vz)
     {
     }
@@ -70,8 +79,8 @@ class CalcMesh
 {
 protected:
     // 3D-сетка из расчётных точек
-    vector<CalcNode> nodes;
-    vector<Element> elements;
+    std::vector<CalcNode> nodes;
+    std::vector<Element> elements;
 
 public:
     // Конструктор сетки из заданного stl-файла
@@ -86,7 +95,7 @@ public:
             double pointZ = nodesCoords[i*3 + 2];
             // Модельная скалярная величина распределена как-то вот так
             double smth = pow(pointX, 2) + pow(pointY, 2) + pow(pointZ, 2);
-            nodes[i] = CalcNode(pointX, pointY, pointZ, smth, 0.0, 0.0, 0.0);
+            nodes[i] = CalcNode(pointX, pointY, pointZ, smth, 0.0, 0.0, 100);
         }
 
         // Пройдём по элементам в модели gmsh
@@ -154,7 +163,7 @@ public:
         }
 
         // Создаём снапшот в файле с заданным именем
-        string fileName = "tetr3d-step-" + std::to_string(snap_number) + ".vtu";
+        string fileName = "Wolf-step-" + std::to_string(snap_number) + ".vtu";
         vtkSmartPointer<vtkXMLUnstructuredGridWriter> writer = vtkSmartPointer<vtkXMLUnstructuredGridWriter>::New();
         writer->SetFileName(fileName.c_str());
         writer->SetInputData(unstructuredGrid);
@@ -162,66 +171,101 @@ public:
     }
 };
 
-int main()
+
+
+int main(int argc, char **argv)
 {
+    
     // Шаг точек по пространству
     double h = 4.0;
     // Шаг по времени
-    double tau = 0.01;
-
+    double tau = 0.1;
     const unsigned int GMSH_TETR_CODE = 4;
+    
+    
+    
+    
+    
+    
+  gmsh::initialize();
 
-    // Теперь придётся немного упороться:
-    // (а) построением сетки средствами gmsh,
-    // (б) извлечением данных этой сетки в свой код.
-    gmsh::initialize();
-    gmsh::model::add("t13");
+  gmsh::model::add("test");
 
-    // Считаем STL
-    try {
-        gmsh::merge("../t13_data.stl");
-        // путь к файлу отсчитывается от точки запуска
-        // если вы собирали все в директории build как цивилизованные люди, 
-        // то перейдите на уровень выше
-        // и запускайте бинарник как ./build/tetr3d
-    } catch(...) {
-        gmsh::logger::write("Could not load STL mesh: bye!");
-        gmsh::finalize();
-        return -1;
+  // Let's merge an STL mesh that we would like to remesh (from the parent
+  // directory):
+  try {
+    gmsh::merge("../wolfinal_new.stl");
+  } catch(...) {
+    gmsh::logger::write("Could not load STL mesh: bye!");
+    gmsh::finalize();
+    return 0;
+  }
+    
+    gmsh::option::setNumber("Mesh.AngleToleranceFacetOverlap", 5.0);
+    gmsh::option::setNumber("Geometry.Tolerance", 1e-4); // Слияние близких точек
+    gmsh::option::setNumber("Mesh.Algorithm", 6);
+    
+    gmsh::option::setNumber("Mesh.CharacteristicLengthMin", 0.01);
+    gmsh::option::setNumber("Mesh.CharacteristicLengthMax", 1.0);
+    gmsh::option::setNumber("Mesh.Smoothing", 50);
+     // Было 10
+  // We first classify ("color") the surfaces by splitting the original surface
+  // along sharp geometrical features. This will create new discrete surfaces,
+  // curves and points.
+
+
+  // Angle between two triangles above which an edge is considered as sharp:
+  double angle = 0.01;
+
+  // For complex geometries, patches can be too complex, too elongated or too
+  // large to be parametrized; setting the following option will force the
+  // creation of patches that are amenable to reparametrization:
+  bool forceParametrizablePatches = false;
+
+  // For open surfaces include the boundary edges in the classification process:
+  bool includeBoundary = true;
+
+  // Force curves to be split on given angle:
+  double curveAngle = 0.01;
+
+  gmsh::model::mesh::classifySurfaces(angle * M_PI / 180., includeBoundary,
+                                      forceParametrizablePatches,
+                                      curveAngle * M_PI / 180.);
+    
+    
+    
+  // Create a geometry for all the discrete curves and surfaces in the mesh, by
+  // computing a parametrization for each one
+  gmsh::model::mesh::createGeometry();
+
+  // Create a volume from all the surfaces
+  std::vector<std::pair<int, int> > s;
+  gmsh::model::getEntities(s, 2);
+  std::vector<int> sl;
+  for(auto surf : s) sl.push_back(surf.second);
+  int l = gmsh::model::geo::addSurfaceLoop(sl);
+  gmsh::model::geo::addVolume({l});
+
+  gmsh::model::geo::synchronize();
+    
+  // We specify element sizes imposed by a size field, just because we can :-)
+  bool funny = false; // false;
+  int f = gmsh::model::mesh::field::add("MathEval");
+    if(funny){
+        gmsh::model::mesh::field::setString(f, "F", "2*Sin((x+y)/5) + 3");
     }
+    else{
+        gmsh::model::mesh::field::setString(f, "F", "4");
+    }
+  gmsh::model::mesh::field::setAsBackgroundMesh(f);
+  gmsh::model::mesh::generate(3);
 
-    // Восстановим геометрию
-    double angle = 40;
-    bool forceParametrizablePatches = false;
-    bool includeBoundary = true;
-    double curveAngle = 180;
-    gmsh::model::mesh::classifySurfaces(angle * M_PI / 180., includeBoundary, forceParametrizablePatches, curveAngle * M_PI / 180.);
-    gmsh::model::mesh::createGeometry();
-
-    // Зададим объём по считанной поверхности
-    std::vector<std::pair<int, int> > s;
-    gmsh::model::getEntities(s, 2);
-    std::vector<int> sl;
-    for(auto surf : s) sl.push_back(surf.second);
-    int l = gmsh::model::geo::addSurfaceLoop(sl);
-    gmsh::model::geo::addVolume({l});
-
-    gmsh::model::geo::synchronize();
-
-    // Зададим мелкость желаемой сетки
-    int f = gmsh::model::mesh::field::add("MathEval");
-    gmsh::model::mesh::field::setString(f, "F", "4");
-    gmsh::model::mesh::field::setAsBackgroundMesh(f);
-
-    // Построим сетку
-    gmsh::model::mesh::generate(3);
-
-    // Теперь извлечём из gmsh данные об узлах сетки
+    
     std::vector<double> nodesCoord;
     std::vector<std::size_t> nodeTags;
     std::vector<double> parametricCoord;
     gmsh::model::mesh::getNodes(nodeTags, nodesCoord, parametricCoord);
-
+    
     // И данные об элементах сетки тоже извлечём, нам среди них нужны только тетраэдры, которыми залит объём
     std::vector<std::size_t>* tetrsNodesTags = nullptr;
     std::vector<int> elementTypes;
@@ -242,7 +286,6 @@ int main()
 
     cout << "The model has " <<  nodeTags.size() << " nodes and " << tetrsNodesTags->size() / 4 << " tetrs." << endl;
 
-    // На всякий случай проверим, что номера узлов идут подряд и без пробелов
     for(int i = 0; i < nodeTags.size(); ++i) {
         // Индексация в gmsh начинается с 1, а не с нуля. Ну штош, значит так.
         assert(i == nodeTags[i] - 1);
@@ -253,10 +296,20 @@ int main()
     // TODO: неплохо бы полноценно данные сетки проверять, да
 
     CalcMesh mesh(nodesCoord, *tetrsNodesTags);
+    
+    
+  
 
     gmsh::finalize();
-
+    
     mesh.snapshot(0);
-
-    return 0;
+    for(unsigned int step = 1; step < 10; step++) {
+        mesh.doTimeStep(tau);
+        mesh.snapshot(step);
+    }
+    
+  return 0;
 }
+
+
+
