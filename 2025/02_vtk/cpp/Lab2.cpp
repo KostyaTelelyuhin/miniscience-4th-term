@@ -95,7 +95,13 @@ public:
             double pointZ = nodesCoords[i*3 + 2];
             // Модельная скалярная величина распределена как-то вот так
             double smth = pow(pointX, 2) + pow(pointY, 2) + pow(pointZ, 2);
-            nodes[i] = CalcNode(pointX, pointY, pointZ, smth, 0.0, 0.0, 100);
+            
+            double Omega = 1.0;
+            if(pow(pointX, 2) + pow(pointY, 2) < 67*67){
+                nodes[i] = CalcNode(pointX, pointY, pointZ, smth, 0.0, 0.0, 0.0);
+            }else{
+                nodes[i] = CalcNode(pointX, pointY, pointZ, smth, -Omega*(pointY - 60), Omega * (pointX), 0.0);
+            }
         }
 
         // Пройдём по элементам в модели gmsh
