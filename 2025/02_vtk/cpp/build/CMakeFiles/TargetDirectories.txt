@@ -1,0 +1,6 @@
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/CMakeFiles/cubic2d.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/CMakeFiles/cubic3d.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/CMakeFiles/tetr3d.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/CMakeFiles/Lab2.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/CMakeFiles/edit_cache.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/CMakeFiles/rebuild_cache.dir

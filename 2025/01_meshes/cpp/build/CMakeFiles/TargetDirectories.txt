@@ -1,0 +1,10 @@
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/sample01.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/sample02.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/sample03.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/sample04.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/sample05.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/sample06.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/lab01_1.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/lab01_3.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/edit_cache.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/build/CMakeFiles/rebuild_cache.dir

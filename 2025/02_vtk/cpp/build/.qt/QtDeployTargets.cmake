@@ -1,0 +1,8 @@
+set(__QT_DEPLOY_TARGET_cubic2d_FILE /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/cubic2d)
+set(__QT_DEPLOY_TARGET_cubic2d_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_cubic3d_FILE /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/cubic3d)
+set(__QT_DEPLOY_TARGET_cubic3d_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_tetr3d_FILE /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/tetr3d)
+set(__QT_DEPLOY_TARGET_tetr3d_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_Lab2_FILE /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/02_vtk/cpp/build/Lab2)
+set(__QT_DEPLOY_TARGET_Lab2_TYPE EXECUTABLE)

@@ -1,0 +1,3 @@
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/test/build/CMakeFiles/my_app.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/test/build/CMakeFiles/edit_cache.dir
+/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/01_meshes/cpp/test/build/CMakeFiles/rebuild_cache.dir
