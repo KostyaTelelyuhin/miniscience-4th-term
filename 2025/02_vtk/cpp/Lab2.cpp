@@ -96,8 +96,8 @@ public:
             // Модельная скалярная величина распределена как-то вот так
             double smth = pow(pointX, 2) + pow(pointY, 2) + pow(pointZ, 2);
             
-            double Omega = 1.0;
-            if(pow(pointX, 2) + pow(pointY, 2) < 67*67){
+            double Omega = 0.5;
+            if(pow(pointX, 2) + pow(pointY, 2) < 68*68){
                 nodes[i] = CalcNode(pointX, pointY, pointZ, smth, 0.0, 0.0, 0.0);
             }else{
                 nodes[i] = CalcNode(pointX, pointY, pointZ, smth, -Omega*(pointY - 60), Omega * (pointX), 0.0);
