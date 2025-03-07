@@ -15,6 +15,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 if (NOT TARGET dolfinx)
   find_package(DOLFINX REQUIRED)
 endif()
+find_package(xtensor REQUIRED)
+include_directories(${xtensor_INCLUDE_DIRS})
 
 # Add target to compile UFL files
 if (PETSC_SCALAR_COMPLEX EQUAL 1)

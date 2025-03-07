@@ -20,7 +20,7 @@ int main(int argc, char **argv)
   // Let's merge an STL mesh that we would like to remesh (from the parent
   // directory):
   try {
-    gmsh::merge("../wolfinal_new.stl");
+    gmsh::merge("../axolotl.stl");
   } catch(...) {
     gmsh::logger::write("Could not load STL mesh: bye!");
     gmsh::finalize();

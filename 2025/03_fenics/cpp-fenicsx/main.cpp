@@ -122,7 +122,14 @@ int main(int argc, char* argv[])
     // Create mesh and function space
     auto mesh = std::make_shared<mesh::Mesh>(mesh::create_rectangle(
         MPI_COMM_WORLD, {{{0.0, 0.0}, {2.0, 1.0}}}, {32, 16},
-        mesh::CellType::triangle, mesh::GhostMode::shared_facet));
+      mesh::CellType::triangle, mesh::GhostMode::shared_facet));
+
+    //auto mesh = std::make_shared<mesh::Mesh>(mesh::create_disk(MPI_COMM_WORLD, 0.5, 0.5, 1.0, 8, 32));
+
+
+
+
+
 
     auto V = std::make_shared<fem::FunctionSpace>(
         fem::create_functionspace(functionspace_form_poisson_a, "u", mesh));
@@ -167,6 +174,7 @@ int main(int argc, char* argv[])
         {
           auto x0 = xt::row(x, 0);
           return xt::isclose(x0, 0.0) or xt::isclose(x0, 2.0);
+          
         });
     const auto bdofs = fem::locate_dofs_topological({*V}, 1, facets);
     auto bc = std::make_shared<const fem::DirichletBC<T>>(0.0, bdofs, V);
@@ -174,14 +182,24 @@ int main(int argc, char* argv[])
     f->interpolate(
         [](auto&& x) -> xt::xarray<T>
         {
-          auto dx = xt::square(xt::row(x, 0) - 0.5)
-                    + xt::square(xt::row(x, 1) - 0.5);
-          return 10 * xt::exp(-(dx) / 0.02);
+          auto dx = xt::square(xt::row(x, 0) + 0.5);
+                    //+ xt::square(xt::row(x, 1) - 0.5);
+          return 5000 * xt::exp(-(dx) / 100);
         });
 
-    g->interpolate([](auto&& x) -> xt::xarray<T>
-                   { return xt::sin(5 * xt::row(x, 0)); });
-
+    //g->interpolate([](auto&& x) -> xt::xarray<T>
+    //              { return xt::zeros_like(xt::row(x, 0)); });
+    
+     
+                 
+      g->interpolate([](auto&& x) -> xt::xarray<T>
+                   { return xt::exp(5 * xt::row(x, 0)); });
+                 
+                 
+                 
+                 
+                 
+                 
     // Now, we have specified the variational forms and can consider the
     // solution of the variational problem. First, we need to define a
     // :cpp:class:`Function` ``u`` to store the solution. (Upon

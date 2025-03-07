@@ -1,0 +1,376 @@
+The system is: Darwin - 22.6.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fstack-protector-strong;-O2;-pipe;-isystem;/Users/forcs2/miniconda3/envs/fenicsx-env/include;-march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fstack-protector-strong;-O2;-pipe;-isystem;/Users/forcs2/miniconda3/envs/fenicsx-env-11/include;-march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fstack-protector-strong;-O2;-pipe;-isystem;/Users/forcs2/miniconda3/envs/fenicsx-env-11/include;-march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fstack-protector-strong;-O2;-pipe;-isystem;/Users/forcs2/miniconda3/envs/fenicsx-env/include;-march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fstack-protector-strong;-O2;-pipe;-isystem;/Users/forcs2/miniconda3/envs/fenicsx-env/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/3.21.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Users/forcs2/miniconda3/envs/fenicsx-env/bin/clang++ 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-fmessage-length=0;-isystem;/Users/forcs2/miniconda3/envs/fenicsx-env-latest/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/3.21.3/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_40876/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_40876.dir/build.make CMakeFiles/cmTC_40876.dir/build
+Building C object CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o
+/Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -c /Users/forcs2/miniconda3/envs/fenicsx-env-10/share/cmake-3.21/Modules/CMakeCCompilerABI.c
+clang version 18.1.8
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/forcs2/miniconda3/envs/fenicsx-env/bin
+x86_64-apple-darwin13.4: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ (in-process)
+ "/Users/forcs2/miniconda3/envs/fenicsx-env/bin/clang-18" -cc1 -triple x86_64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -fdefine-target-os-macros -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -debugger-tuning=lldb -fdebug-compilation-dir=/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp -target-linker-version 951.9 -v -fcoverage-compilation-dir=/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp -resource-dir /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18 -dependency-file CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -O2 -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -x c /Users/forcs2/miniconda3/envs/fenicsx-env-10/share/cmake-3.21/Modules/CMakeCCompilerABI.c
+clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-apple-darwin22.6.0
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+ignoring duplicate directory "/Users/forcs2/miniconda3/envs/fenicsx-env-11/include"
+ignoring duplicate directory "/Users/forcs2/miniconda3/envs/fenicsx-env/include"
+ignoring duplicate directory "/Users/forcs2/miniconda3/envs/fenicsx-env/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/forcs2/miniconda3/envs/fenicsx-env/include
+ /Users/forcs2/miniconda3/envs/fenicsx-env-11/include
+ /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_40876
+/Users/forcs2/miniconda3/envs/fenicsx-env-10/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40876.dir/link.txt --verbose=1
+/Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -v -Wl,-v CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -o cmTC_40876 
+clang version 18.1.8
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/forcs2/miniconda3/envs/fenicsx-env/bin
+ "/Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/forcs2/miniconda3/envs/fenicsx-env/lib/libLTO.18.1.dylib -dynamic -arch x86_64 -platform_version macos 13.0.0 14.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_40876 -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -v CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -lSystem /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-951.9
+BUILD 22:09:25 Feb  3 2025
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/forcs2/miniconda3/envs/fenicsx-env/lib
+	/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib
+	/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib
+	/Users/forcs2/miniconda3/envs/fenicsx-env/lib
+	/Users/forcs2/miniconda3/envs/fenicsx-env/lib
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/forcs2/miniconda3/envs/fenicsx-env/include]
+    add: [/Users/forcs2/miniconda3/envs/fenicsx-env-11/include]
+    add: [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+  end of search list found
+  collapse include dir [/Users/forcs2/miniconda3/envs/fenicsx-env/include] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/include]
+  collapse include dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/include] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env-11/include]
+  collapse include dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+  implicit include dirs: [/Users/forcs2/miniconda3/envs/fenicsx-env/include;/Users/forcs2/miniconda3/envs/fenicsx-env-11/include;/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(x86_64-apple-darwin13\.4\.0-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_40876/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_40876.dir/build.make CMakeFiles/cmTC_40876.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -c /Users/forcs2/miniconda3/envs/fenicsx-env-10/share/cmake-3.21/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang version 18.1.8]
+  ignore line: [Target: x86_64-apple-darwin13.4.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/forcs2/miniconda3/envs/fenicsx-env/bin]
+  ignore line: [x86_64-apple-darwin13.4: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ (in-process)]
+  ignore line: [ "/Users/forcs2/miniconda3/envs/fenicsx-env/bin/clang-18" -cc1 -triple x86_64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -fdefine-target-os-macros -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -debugger-tuning=lldb -fdebug-compilation-dir=/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp -target-linker-version 951.9 -v -fcoverage-compilation-dir=/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp -resource-dir /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18 -dependency-file CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -O2 -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -x c /Users/forcs2/miniconda3/envs/fenicsx-env-10/share/cmake-3.21/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-apple-darwin22.6.0]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
+  ignore line: [ignoring duplicate directory "/Users/forcs2/miniconda3/envs/fenicsx-env-11/include"]
+  ignore line: [ignoring duplicate directory "/Users/forcs2/miniconda3/envs/fenicsx-env/include"]
+  ignore line: [ignoring duplicate directory "/Users/forcs2/miniconda3/envs/fenicsx-env/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/forcs2/miniconda3/envs/fenicsx-env/include]
+  ignore line: [ /Users/forcs2/miniconda3/envs/fenicsx-env-11/include]
+  ignore line: [ /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_40876]
+  ignore line: [/Users/forcs2/miniconda3/envs/fenicsx-env-10/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40876.dir/link.txt --verbose=1]
+  ignore line: [/Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -v -Wl -v CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -o cmTC_40876 ]
+  ignore line: [clang version 18.1.8]
+  ignore line: [Target: x86_64-apple-darwin13.4.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/forcs2/miniconda3/envs/fenicsx-env/bin]
+  link line: [ "/Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/forcs2/miniconda3/envs/fenicsx-env/lib/libLTO.18.1.dylib -dynamic -arch x86_64 -platform_version macos 13.0.0 14.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_40876 -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -v CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o -lSystem /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a]
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/libLTO.18.1.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [13.0.0] ==> ignore
+    arg [14.2] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk] ==> ignore
+    arg [-mllvm] ==> ignore
+    arg [-enable-linkonceodr-outlining] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_40876] ==> ignore
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_40876.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a] ==> lib [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Users/forcs2/miniconda3/envs/fenicsx-env/lib;/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib;/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib;/Users/forcs2/miniconda3/envs/fenicsx-env/lib;/Users/forcs2/miniconda3/envs/fenicsx-env/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: [/Users/forcs2/miniconda3/envs/fenicsx-env/lib;/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_90183/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_90183.dir/build.make CMakeFiles/cmTC_90183.dir/build
+Building CXX object CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o
+/Users/forcs2/miniconda3/envs/fenicsx-env/bin/clang++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -c /Users/forcs2/miniconda3/envs/fenicsx-env-10/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp
+clang version 18.1.8
+Target: x86_64-apple-darwin22.6.0
+Thread model: posix
+InstalledDir: /Users/forcs2/miniconda3/envs/fenicsx-env/bin
+clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ (in-process)
+ "/Users/forcs2/miniconda3/envs/fenicsx-env/bin/clang-18" -cc1 -triple x86_64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -fdefine-target-os-macros -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp -target-linker-version 951.9 -v -fcoverage-compilation-dir=/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp -resource-dir /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18 -dependency-file CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -internal-isystem /Users/forcs2/miniconda3/envs/fenicsx-env/bin/../include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Users/forcs2/miniconda3/envs/fenicsx-env-10/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-apple-darwin22.6.0
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/forcs2/miniconda3/envs/fenicsx-env/bin/../include/c++/v1
+ /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking CXX executable cmTC_90183
+/Users/forcs2/miniconda3/envs/fenicsx-env-10/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90183.dir/link.txt --verbose=1
+/Users/forcs2/miniconda3/envs/fenicsx-env/bin/clang++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -v -Wl,-v CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_90183 
+clang version 18.1.8
+Target: x86_64-apple-darwin22.6.0
+Thread model: posix
+InstalledDir: /Users/forcs2/miniconda3/envs/fenicsx-env/bin
+ "/usr/bin/ld" -demangle -lto_library /Users/forcs2/miniconda3/envs/fenicsx-env/lib/libLTO.18.1.dylib -dynamic -arch x86_64 -platform_version macos 13.0.0 14.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_90183 -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -v CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a
+ld: warning: duplicate -rpath '/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib' ignored
+ld: warning: duplicate -rpath '/Users/forcs2/miniconda3/envs/fenicsx-env/lib' ignored
+ld: warning: duplicate -rpath '/Users/forcs2/miniconda3/envs/fenicsx-env/lib' ignored
+ld: warning: duplicate -rpath '/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib' ignored
+ld: warning: duplicate -rpath '/Users/forcs2/miniconda3/envs/fenicsx-env/lib' ignored
+ld: warning: duplicate -rpath '/Users/forcs2/miniconda3/envs/fenicsx-env/lib' ignored
+@(#)PROGRAM:ld  PROJECT:dyld-1022.1
+BUILD 05:26:33 Dec  7 2023
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+TAPI support using: conda-forge TAPI version 1300.6.5 (https://github.com/tpoechtrager/apple-libtapi/commit/b8c5ac40267aa5f6004dd38cc2b2cd84f2d9d555)
+Library search paths:
+	/Users/forcs2/miniconda3/envs/fenicsx-env/lib
+	/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib
+	/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib
+	/Users/forcs2/miniconda3/envs/fenicsx-env/lib
+	/Users/forcs2/miniconda3/envs/fenicsx-env/lib
+Framework search paths:
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/forcs2/miniconda3/envs/fenicsx-env/bin/../include/c++/v1]
+    add: [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+  end of search list found
+  collapse include dir [/Users/forcs2/miniconda3/envs/fenicsx-env/bin/../include/c++/v1] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/include/c++/v1]
+  collapse include dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+  implicit include dirs: [/Users/forcs2/miniconda3/envs/fenicsx-env/include/c++/v1;/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(x86_64-apple-darwin13\.4\.0-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_90183/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_90183.dir/build.make CMakeFiles/cmTC_90183.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Users/forcs2/miniconda3/envs/fenicsx-env/bin/clang++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -c /Users/forcs2/miniconda3/envs/fenicsx-env-10/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang version 18.1.8]
+  ignore line: [Target: x86_64-apple-darwin22.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/forcs2/miniconda3/envs/fenicsx-env/bin]
+  ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ (in-process)]
+  ignore line: [ "/Users/forcs2/miniconda3/envs/fenicsx-env/bin/clang-18" -cc1 -triple x86_64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -fdefine-target-os-macros -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -fdebug-compilation-dir=/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp -target-linker-version 951.9 -v -fcoverage-compilation-dir=/Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp -resource-dir /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18 -dependency-file CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -internal-isystem /Users/forcs2/miniconda3/envs/fenicsx-env/bin/../include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Users/forcs2/miniconda3/envs/fenicsx-env-10/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-apple-darwin22.6.0]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/forcs2/miniconda3/envs/fenicsx-env/bin/../include/c++/v1]
+  ignore line: [ /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_90183]
+  ignore line: [/Users/forcs2/miniconda3/envs/fenicsx-env-10/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90183.dir/link.txt --verbose=1]
+  ignore line: [/Users/forcs2/miniconda3/envs/fenicsx-env/bin/clang++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -v -Wl -v CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_90183 ]
+  ignore line: [clang version 18.1.8]
+  ignore line: [Target: x86_64-apple-darwin22.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/forcs2/miniconda3/envs/fenicsx-env/bin]
+  link line: [ "/usr/bin/ld" -demangle -lto_library /Users/forcs2/miniconda3/envs/fenicsx-env/lib/libLTO.18.1.dylib -dynamic -arch x86_64 -platform_version macos 13.0.0 14.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_90183 -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/forcs2/miniconda3/envs/fenicsx-env/lib -v CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/libLTO.18.1.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [13.0.0] ==> ignore
+    arg [14.2] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk] ==> ignore
+    arg [-mllvm] ==> ignore
+    arg [-enable-linkonceodr-outlining] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_90183] ==> ignore
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+    arg [-L/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_90183.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a] ==> lib [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Users/forcs2/miniconda3/envs/fenicsx-env/lib;/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib;/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib;/Users/forcs2/miniconda3/envs/fenicsx-env/lib;/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  remove lib [System]
+  remove lib [/Users/forcs2/miniconda3/envs/fenicsx-env/lib/clang/18/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  collapse library dir [/Users/forcs2/miniconda3/envs/fenicsx-env/lib] ==> [/Users/forcs2/miniconda3/envs/fenicsx-env/lib]
+  implicit libs: [c++]
+  implicit objs: []
+  implicit dirs: [/Users/forcs2/miniconda3/envs/fenicsx-env/lib;/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a4b2e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a4b2e.dir/build.make CMakeFiles/cmTC_a4b2e.dir/build
+Building C object CMakeFiles/cmTC_a4b2e.dir/CheckIncludeFile.c.o
+/Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -MD -MT CMakeFiles/cmTC_a4b2e.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_a4b2e.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_a4b2e.dir/CheckIncludeFile.c.o -c /Users/forcs2/PROJECTS/MIPTProjects/BeklimProga/miniscience-4th-term/2025/03_fenics/cpp-fenicsx/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a4b2e
+/Users/forcs2/miniconda3/envs/fenicsx-env-10/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4b2e.dir/link.txt --verbose=1
+/Users/forcs2/miniconda3/envs/fenicsx-env/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env-11/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/forcs2/miniconda3/envs/fenicsx-env/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env-11/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/forcs2/miniconda3/envs/fenicsx-env/lib -L/Users/forcs2/miniconda3/envs/fenicsx-env/lib  CMakeFiles/cmTC_a4b2e.dir/CheckIncludeFile.c.o -o cmTC_a4b2e 
+
+
+
